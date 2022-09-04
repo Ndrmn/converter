@@ -1,0 +1,115 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+// Шрифты
+
+//Стили
+body{
+	background: rgb(255,182,103);
+	background: -moz-radial-gradient(circle, rgba(255,182,103,1) 0%, rgba(236,134,147,1) 55%, rgba(216,76,236,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(255,182,103,1) 0%, rgba(236,134,147,1) 55%, rgba(216,76,236,1) 100%);
+	background: radial-gradient(circle, rgba(255,182,103,1) 0%, rgba(236,134,147,1) 55%, rgba(216,76,236,1) 100%) fixed;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb667",endColorstr="#d84cec",GradientType=1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+
+}
+.conv {
+	max-width: 600px;
+	background-color: white;
+	border-radius: 18px;
+}
+.conv__title {
+	padding: 30px 30px 15px 30px;
+	font-size: 36px;
+	text-align: center;
+}
+.conv__area {
+	background-color: #F5F5F5;
+	padding: 15px 30px 30px 30px;
+	border-radius: 0px 0px 25px 25px;
+	display: flex;
+}
+.conv__from {
+	display: inline-block;
+}
+.conv__currency {
+	display: flex;
+	justify-content: center;
+}
+.flag {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 0px 5px;
+}
+select {
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	font-size: 18px;
+	text-align: left;
+	text-transform: uppercase;
+}
+.conv__inputArea {
+	height: 40px;
+	width: 200px;
+	display: block;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 18px;
+	text-align: right;
+}
+.conv__arrows {
+	display: inline-block;
+	padding: 0px 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.arrows {
+	width: 30px;
+	height: 30px;
+}
+.conv__to {
+	display: inline-block;
+}
+
+.conv__date {
+	background-color: #F5F5F5;
+	padding: 10px 5px 5px 10px;
+	text-align: center;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+@media (max-width: 540px) {
+	.conv__area {
+		flex-direction: column;
+	}
+	.arrows {
+		margin: 15px;
+		transform: rotate(90deg);
+	}
+	.conv__inputArea {
+		width: 100%;
+	}
+	.conv {
+		margin: 0px 10px;
+	}
+}
+
+@media (max-width: 260px) {
+	.conv__title {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 189px) {
+
+}
